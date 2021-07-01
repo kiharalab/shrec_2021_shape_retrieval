@@ -16,13 +16,8 @@ from models_attention import AttentionNeuralNetworkModel
 from model_endtoend import EndToEndNeuralNetworkModel
 from torch import FloatTensor, LongTensor
 
-NB_TARGETS = 554#1543#3585
-#BASE_OUTPUT_DIR = '/net/kihara-fast-scratch/taderinw/protein_shape/shrec2021/test_set_prediction/'
-BASE_OUTPUT_DIR = '/net/kihara-fast-scratch/taderinw/protein_shape/original_track_2021/prediction/'
-
-#BASE_FEATURE_DIR = '/net/kihara-fast-scratch/taderinw/protein_shape/shrec2021/OFF_training_anonym_v2/3dzm_data'
-#inv_data = read_json(BASE_FEATURE_DIR + '/inv_info.json')
-# ply_data = read_json('data/shrec_2019/ply_info.json')
+NB_TARGETS = 554
+BASE_OUTPUT_DIR = 'prediction/'
 
 # Argument Parsing
 parser = argparse.ArgumentParser(description='Generating Predictions')

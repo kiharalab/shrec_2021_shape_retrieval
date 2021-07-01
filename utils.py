@@ -11,8 +11,7 @@ import numpy as np
 from os.path import isfile, join
 from torch import FloatTensor, LongTensor
 
-#BASE_FEATURE_DIR = '/net/kihara/scratch/han273/SCOP_inv/'
-BASE_FEATURE_DIR = '/net/kihara-fast-scratch/taderinw/protein_shape/3dzd_data'
+BASE_FEATURE_DIR = 'path/to/3dzd_data'
 
 def matrix_to_ranking(matrix_fp):
     ranking_fp = matrix_fp.replace('.matrix', '.ranking')
